@@ -77,6 +77,24 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.9;
 }
 
+/* ---------- Top ribbon ---------- */
+.ribbon {
+  background: var(--ink);
+  color: white;
+  text-align: center;
+  padding: 9px 16px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.ribbon a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+.ribbon a:hover { border-bottom-color: white; }
+
 /* ---------- Nav ---------- */
 .nav {
   position: sticky;
