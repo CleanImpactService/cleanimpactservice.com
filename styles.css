@@ -231,29 +231,14 @@ a { color: inherit; text-decoration: none; }
 .hero-visual {
   aspect-ratio: 4/3.2;
   border-radius: 20px;
-  background: linear-gradient(145deg, var(--signal) 0%, #3B8CFF 55%, var(--mint) 100%);
-  position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 44px rgba(15,42,74,0.14);
 }
-.hero-visual::before {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 60px;
-  background: rgba(255,255,255,0.22);
-  transform: rotate(-8deg);
-  top: 30%;
-  left: -20%;
-}
-.hero-visual::after {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 34px;
-  background: rgba(255,255,255,0.14);
-  transform: rotate(-8deg);
-  top: 55%;
-  left: -20%;
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ---------- Section basics ---------- */
