@@ -64,16 +64,22 @@
             <input type="tel" id="phone" name="phone" placeholder="(214) 555-0123" required>
           </div>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+        <div class="form-grid">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+          </div>
+          <div class="field">
+            <label for="zip">Zip code</label>
+            <input type="text" id="zip" name="zip" placeholder="75201" inputmode="numeric" pattern="[0-9]*" maxlength="5">
+          </div>
         </div>
         <div class="form-grid">
           <div class="field">
             <label for="type">Property type</label>
             <select id="type" name="type">
-              <option>Residential</option>
-              <option>Commercial</option>
+              <option>House</option>
+              <option>Apartment</option>
             </select>
           </div>
           <div class="field">
@@ -88,9 +94,28 @@
             </select>
           </div>
         </div>
-        <div class="field full">
-          <label for="message">Anything we should know?</label>
-          <textarea id="message" name="message" placeholder="Square footage, number of bedrooms/bathrooms, preferred days, etc."></textarea>
+        <div class="form-grid">
+          <div class="field">
+            <label for="bedrooms">How many bedrooms?</label>
+            <select id="bedrooms" name="bedrooms">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bathrooms">How many bathrooms?</label>
+            <select id="bathrooms" name="bathrooms">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
         </div>
         <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Request</button>
         <p id="form-error" style="display:none; color:#C0392B; font-size:0.85rem; margin-top:10px; text-align:center;">Something went wrong sending your request. Please call us instead at (940) 297-9492.</p>
